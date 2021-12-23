@@ -5578,7 +5578,7 @@ react-native-gesture-handler@1.10.3, react-native-gesture-handler@^1.10.3:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-instagram-like-image-cropper@^1.0.0:
+react-native-instagram-like-image-cropper@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-instagram-like-image-cropper/-/react-native-instagram-like-image-cropper-1.0.0.tgz#ce2dde96ddbe87e2033537288e5efdec0e4f6a58"
   integrity sha512-4iHx/QylRHhGpGSldOf5cByKVVhDEDlpSkSZd7aV9IuE2DpV4SnyXu5Q72JAJey0Z2ie2USUVkprj9xutOr4sg==
