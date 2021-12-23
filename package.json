@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "release": "yarn semantic-release"
+    "release": "yarn semantic-release",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
@@ -46,7 +47,14 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5",
-    "@types/react-native": "^0.65.8",
-    "typescript": "^3.8.3"
+    "@types/react-native": "^0.66.4",
+    "typescript": "^3.8.3",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
   }
 }
