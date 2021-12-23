@@ -1,7 +1,7 @@
 {
   "name": "react-native-instagram-like-image-cropper",
   "title": "React Native Instagram Like Image Cropper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The component like instagram image cropper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
