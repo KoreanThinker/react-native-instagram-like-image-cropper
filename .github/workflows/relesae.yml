@@ -13,12 +13,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '14'
       - name: Install dependencies
         run: yarn --pure-lockfile
       - name: Build the project
         run: yarn build
       - name: Release
+        run: npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
