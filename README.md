@@ -2,7 +2,7 @@
 The component like instagram image cropper
 ## Preview
 
-<img src="https://github.com/KoreanThinker/react-native-instgram-like-image-cropper/blob/main/gifs/iphone.gif" alt="preview" width="300px" />
+<img src="https://github.com/KoreanThinker/react-native-instagram-like-image-cropper/blob/main/gifs/iphone.gif" alt="preview" width="300px" />
 
 ## Getting started
 ### First, install peer packages
