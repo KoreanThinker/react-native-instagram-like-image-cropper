@@ -25,16 +25,3 @@ jobs:
         run: echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > .npmrc
       - name: Relase
         run: npm publish --access public
-          
-      # Publish to GitHub Packages
-      - uses: actions/setup-node@v1.4.4
-        with:
-          node-version: '14'
-          registry-url: 'https://npm.pkg.github.com'
-      - name: Authenticate with the GitHub Package Registry
-        run:
-          echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" >
-          ~/.npmrc
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
