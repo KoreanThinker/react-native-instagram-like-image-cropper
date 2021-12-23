@@ -36,25 +36,26 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "dependencies": {
-    "react-native-reanimated": "2.2.3",
+    "@react-native-community/image-editor": "2.3.0",
     "react-native-gesture-handler": "1.10.3",
-    "@react-native-community/image-editor": "2.3.0"
+    "react-native-reanimated": "2.2.3"
   },
   "peerDependencies": {
     "react": ">=16.8.1",
     "react-native": ">=0.61.5"
   },
   "devDependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.66.4",
-    "@types/react-native": "^0.66.4",
-    "typescript": "^3.8.3",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@types/react-native": "^0.66.4",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "react": "^16.9.0",
+    "react-native": "^0.66.4",
+    "semantic-release": "^18.0.1",
+    "typescript": "^3.8.3"
   }
 }
