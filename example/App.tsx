@@ -7,7 +7,7 @@ const App = () => {
   const [croppedImage, setCroppedImage] = useState<string | null>(null);
 
   return (
-    <View>
+    <View style={styles.container}>
       <GestureHandlerRootView>
         <InstagramLikeImageCropper
           onCropped={data => setCroppedImage(data.croppedUri)}
@@ -29,6 +29,10 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: 100,
+    flex: 1,
+  },
   image: {
     width: 300,
     height: 300,

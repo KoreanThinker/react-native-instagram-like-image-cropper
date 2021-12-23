@@ -1,7 +1,7 @@
 {
   "name": "react-native-instagram-like-image-cropper",
   "title": "React Native Instagram Like Image Cropper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The component like instagram image cropper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,19 +33,17 @@
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
-  "dependencies": {
-    "react-native-reanimated": "^2.3.0",
-    "react-native-gesture-handler": "^1.10.3",
-    "@react-native-community/image-editor": "^2.3.0"
-  },
   "peerDependencies": {
     "react": ">=16.8.1",
     "react-native": ">=0.61.5",
-    "react-native-reanimated": ">=2.2.0",
+    "react-native-reanimated": "2.2.4",
     "react-native-gesture-handler": ">=1.8.0 || < 2.0.0",
     "@react-native-community/image-editor": ">=2.0.0"
   },
   "devDependencies": {
+    "react-native-reanimated": "2.2.4",
+    "react-native-gesture-handler": "1.10.3",
+    "@react-native-community/image-editor": "2.3.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/react-native": "^0.61.5",
     "@typescript-eslint/eslint-plugin": "^5.7.0",

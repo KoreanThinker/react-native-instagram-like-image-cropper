@@ -4,7 +4,7 @@ The component like instagram image cropper
 ## Getting started
 ### First, install peer packages
 - [react-native-gesture-handler@^1.10.0](https://docs.swmansion.com/react-native-gesture-handler/docs/1.10.3/)
-- [react-native-reanimated@^2.3.0](https://docs.swmansion.com/react-native-reanimated/docs/)
+- [react-native-reanimated@2.2.4](https://docs.swmansion.com/react-native-reanimated/docs/2.2.0/)
 - [react-native-image-editor@^2.3.0](https://github.com/callstack/react-native-image-editor)
 ### Second, install package
 `npm install react-native-instagram-like-image-cropper --save`

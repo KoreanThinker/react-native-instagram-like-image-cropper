@@ -7,7 +7,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "node:clean": "rm -rf node_modules && rm yarn.lock",
+    "node:clean:force": "yarn cache clean",
+    "android:clean": "rm -rf android/build && sudo rm -rf android/app/build && sudo rm -rf android/.gradle",
+    "pod": "cd ios && pod install && cd ..",
+    "pod:clean": "cd ios && rm -rf Pods && rm Podfile.lock && pod deintegrate && pod setup && pod repo update && cd ..",
+    "pod:clean:force": "sudo rm -rf ~/Library/Caches/CocoaPods",
+    "ios:clean": "cd ios && xcodebuild clean",
+    "ios:clean:force": "rm -rf ~/Library/Developer/Xcode/DerivedData/*"
   },
   "dependencies": {
     "@react-native-community/image-editor":"^2.3.0",
@@ -15,7 +23,7 @@
     "react-native": "0.66.4",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-instagram-like-image-cropper": "^1.0.0",
-    "react-native-reanimated": "^2.3.0"
+    "react-native-reanimated": "2.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
