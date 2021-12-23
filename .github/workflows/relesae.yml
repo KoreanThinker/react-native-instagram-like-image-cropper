@@ -15,24 +15,22 @@ jobs:
         with:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@koreanthinker'
       - name: Install dependencies
         run: yarn --pure-lockfile
       - name: Build the project
         run: yarn build
-      - name: Release
+      - name: Create .npmrc file
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        commands:
-          - echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > .npmrc
-          - npm publish --access public
+        run: echo //registry.npmjs.org/:_authToken=$NPM_TOKEN > .npmrc
+      - name: Relase
+        run: npm publish --access public
           
       # Publish to GitHub Packages
       - uses: actions/setup-node@v1.4.4
         with:
           node-version: '14'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@koreanthinker'
       - name: Authenticate with the GitHub Package Registry
         run:
           echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" >
