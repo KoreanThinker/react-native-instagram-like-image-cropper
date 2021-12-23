@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import InstagramLikeImageCropper from '../src';
+import InstagramLikeImageCropper from 'react-native-instagram-like-image-cropper';
 
 const App = () => {
   const [croppedImage, setCroppedImage] = useState<string | null>(null);
