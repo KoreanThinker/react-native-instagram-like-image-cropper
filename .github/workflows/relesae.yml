@@ -16,10 +16,14 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
           scope: '@koreanthinker'
+      - name: ls
+        run: ls
       - name: Install dependencies
         run: yarn --pure-lockfile
       - name: Build the project
         run: yarn build
+      - name: ls2
+        run: ls
       - name: Release
         run: npm publish --access public
         env:
