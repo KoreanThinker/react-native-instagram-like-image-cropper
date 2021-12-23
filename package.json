@@ -14,8 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koreanthinker/react-native-instagram-like-image-cropper.git",
-    "baseUrl": "https://github.com/koreanthinker/react-native-instagram-like-image-cropper"
+    "url": "https://github.com/koreanthinker/react-native-instagram-like-image-cropper"
   },
   "keywords": [
     "react-native",
@@ -28,7 +27,7 @@
     "instagram"
   ],
   "author": {
-    "name": "coderhyun",
+    "name": "KoreanThinker",
     "email": "coderhyun476@gmail.com"
   },
   "license": "MIT",
